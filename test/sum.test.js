@@ -37,10 +37,13 @@ test("angka harus lebih besar dari value", ()=>{
 
 test("array", ()=>{
     const names = ['Ramanda','Maulana','Daulay'];
-    expect(names).toContain('Maulana') //untuk mengecek data array yang berisi 1 field yang sama
+    expect(names).toContain('Maulana') //untuk mengecek data array 1 nama yang sama
     expect(names).toEqual(['Ramanda','Maulana','Daulay']) //Untuk mengecek semua isi array harus sesuai 
 
+    // Array Object
     const person = [{name:'Ridho'},{umur:10}] 
     expect(person).toContainEqual({name:'Ridho'}) // Cek data object array 1 field yang sama    
     expect(person).toEqual([{name:'Ridho'},{umur:10}]) // Cek data object array semua field harus sesuai    
 })
+
+// Expection Matchers
